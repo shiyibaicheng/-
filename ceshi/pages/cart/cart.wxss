@@ -1,0 +1,108 @@
+.scroll-page {
+    background-color: rgba(248, 248, 248, 100);
+}
+.title-number-cart {
+    background-color: white;
+    height: 120rpx;
+    line-height: 120rpx;
+    text-align: left;
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    font-family: SourceHanSansSC-bold;
+    padding-left: 32rpx;
+    font-weight: 800;
+}
+.shop-goods {
+    padding: 50rpx 30rpx 0 30rpx;
+    margin-top: 32rpx;
+    background-color: white;
+}
+.shop-goods-title {
+    line-height: 40rpx;
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    font-family: SourceHanSansSC-bold;
+    font-weight: 800;
+    justify-content: flex-start;
+    margin-bottom: 40rpx;
+}
+.shop-goods-content {
+    padding: 50rpx 0rpx;
+    justify-content: flex-start;
+}
+.shop-goods-content image {
+    width: 160rpx;
+    height: 160rpx;
+    margin-left: 20rpx;
+}
+.shop-goods-content-right {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 420rpx;
+    margin-left: 30rpx;
+}
+.shop-goods-content-right .title {
+    line-height: 45rpx;
+    height: 90rpx;
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    font-family: SourceHanSansSC-regular;
+    overflow: hidden;
+    margin-bottom: 30rpx;
+}
+.manjian {
+    font-size: 36rpx;
+    font-weight: 800;
+    height: 52rpx;
+    width: 120rpx;
+    line-height: 52rpx;
+    border-radius: 40rpx;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: 2rpx solid red;
+}
+
+.shop-goods-content-right .number > view:nth-child(1), .shop-goods-content-right .number > view:nth-child(3) {
+    width: 50rpx;
+    height: 50rpx;
+    font-size: 32rpx;
+    line-height: 50rpx;
+    text-align: center;
+}
+.shop-goods-content-right .number > view:nth-child(2) {
+    margin: 0 14rpx;
+    width: 70rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    background-color: rgba(248, 248, 248, 100);
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    text-align: center;
+    font-family: Roboto;
+}
+.bottom-btn-view .price {
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    font-weight: 800;
+    font-family: SourceHanSansSC-bold;
+} 
+.bottom-btn-view .quanxuan {
+    color: rgba(144, 144, 144, 100);
+    font-size: 28rpx;
+    font-family: SourceHanSansSC-regular;
+}
+
+.bottom-btn-view .jiesuan {
+    border: 2rpx solid red;
+    height: 76rpx;
+    line-height: 76rpx;
+    width: 220rpx;
+    font-size: 28rpx;
+    font-weight: 800;
+    text-align: center;
+    background-color: rgba(246, 57, 13, 100);
+    color: rgba(255, 255, 255, 100);
+    border-radius: 40rpx;
+    font-family: Roboto;
+}

@@ -1,0 +1,65 @@
+.scroller {
+    background-color: #f8f8f8;
+}
+.normal-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.normal-cloumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bgc {
+    background-color: white;
+}
+.jt image {
+    height: 44rpx;
+    width: 44rpx;
+}
+.h1 {
+    font-size: 28rpx;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+}
+.h2 {
+    font-size: 28rpx;
+    color: #909090;
+    text-align: center;
+    font-weight: 500;
+}
+.select {
+    width: 320rpx;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.picker {
+    border: 2rpx solid #909090;
+}
+.biaoqian {
+    height: 60rpx;
+    width: 124rpx;
+    border: 2rpx solid #909090;
+    border-radius: 30rpx;
+    color: #909090 ;
+    padding-top: 6rpx;
+    text-align: center;
+}
+.bottom-button {
+    margin: 62rpx 28rpx 34rpx 24rpx; 
+    background-color: red;
+    border-radius: 40rpx;
+    padding-top: 20rpx;
+}
+.h3 {
+    font-size: 32rpx;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+}

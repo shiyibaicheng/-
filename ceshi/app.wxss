@@ -1,0 +1,27 @@
+/* 行 */
+.row-view {
+    /* 排列方式 */
+    display: flex;
+    /* 沿着两个轴 */
+    flex-direction: row;
+    /* 换行方式 */
+    flex-wrap: wrap;
+    /* 内容对齐方式 */
+    justify-content: space-around;
+    /* 纵轴的对齐方式 */
+    align-items: center;
+}
+/* 纵 */
+.clomun-view {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+}

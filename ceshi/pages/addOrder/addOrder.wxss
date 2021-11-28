@@ -1,0 +1,102 @@
+.moren {
+    height: 240rpx;
+    padding-left: 30rpx;
+    font-weight: 500;
+}
+.moren ,.zhifu, .huowuxiangqing{border-bottom: 20rpx solid rgba(248, 248, 248, 100);}
+.moren .one, .moren .two, .moren .three {height: 80rpx;}
+.moren .one, .moren .two, .moren .three , .zhifu,.huowuxiangqing .one, .huowuxiangqing .two,.huowuxiangqing .three,.huowuxiangqing .four,.huowuxiangqing .five, .tijiao .one,.tijiao .two,.tijiao .three,.tijiao .heji {display: flex;align-items: center;}
+.moren .one {display: flex;}
+.moren image {height: 25rpx;width: 30rpx;padding-left: 460rpx;}
+
+
+.moren .one view:nth-child(1) {
+    color: white;
+    background-color: #F6390D;
+    height: 45rpx;
+  }
+.moren .one view:nth-child(2) {
+    padding-left: 60rpx;
+    font-weight: bold;
+    height: 45rpx;
+  }
+.moren .three view:nth-child(2) {padding-left: 60rpx;}
+.zhifu {
+    height: 100rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30rpx 0 40rpx;
+  }
+.zhifu image{height: 41.6rpx; width: 41.6rpx;padding-left: 17rpx;}
+.zhifu .two {color:#101010 100%;padding-left: 350rpx;}
+.huowuxiangqing {
+    height: 444rpx;
+    padding-left: 30rpx;
+  } 
+.huowuxiangqing .one {height: 65rpx; font-weight: bold;}
+.huowuxiangqing .two {
+    height: 160rpx;
+    width: 320rpx;
+    padding-right: 30rpx;
+}
+.huowuxiangqing .two .huo image{height: 160rpx;width: 160rpx;padding-right: 30rpx;}
+.huowuxiangqing .two .shu {padding-left:172rpx;}
+.huowuxiangqing .three view:nth-child(2) {padding-left: 63%;}
+.huowuxiangqing .three image{height: 41.6rpx; width: 41.6rpx;padding-left: 18rpx;}
+.huowuxiangqing .four {color: #909090;font-size: 24rpx;height: 40rpx;}
+.huowuxiangqing .five {height: 80rpx;font-size: 28rpx;}
+.huowuxiangqing .five view:nth-child(2){height: 80rpx;font-size: 28rpx;padding:60rpx 20rpx 20rpx 468rpx;}
+.huowuxiangqing .five image {height: 41.6rpx; width: 41.6rpx;}
+.huowuxiangqing .six{height: 80rpx;color: rgba(144, 144, 144, 100);font-size: 28rpx;padding-left: 260rpx;}
+.tijiao {
+    padding: 40rpx 30rpx 0 30rpx;
+    justify-content: flex-start;
+}
+.tijiao-jiage, .tijiao-yunfei, .tijiao-heji {
+    justify-content: space-between;
+    width: 690rpx;
+    height: 80rpx
+}
+.tijiao-jiage .one, .tijiao-yunfei .one {
+    color: rgba(16, 16, 16, 100);
+    font-size: 28rpx;
+    font-family: SourceHanSansSC-regular;
+}
+.tijiao-jiage .two {
+    color: rgba(19, 18, 18, 100);
+    font-size: 28rpx;
+    font-weight: 800;
+}
+.tijiao-yunfei .jia{
+    color: rgba(246, 57, 13, 100);
+    font-size: 28rpx;
+    font-weight: 800;   
+    padding-left: 260rpx;
+}
+.tijiao-yunfei .two {
+    color: rgba(246, 57, 13, 100);
+    font-size: 28rpx;
+    font-weight: 800;   
+}
+.tijiao-heji {
+    margin-top: 20rpx;
+}
+.tijiao-heji .one {
+    color: rgba(246, 57, 13, 100);
+    font-size: 36rpx;
+    font-weight: 800;
+}
+.tijiao-heji .two {
+    width: 220rpx;
+    height: 80rpx;
+    line-height: 40rpx;
+    border-radius: 40rpx;
+    background-color: rgba(246, 57, 13, 100);
+    color: rgba(255, 255, 255, 100);
+    font-size: 28rpx;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 800;
+    padding-left:100rpx;
+}
+

@@ -1,0 +1,67 @@
+
+<scroll-view style="height:{{pageHeight}}rpx" class="scroll-page" scroll-y>
+    <!-- ---个人信息--- -->
+    <view class="moren" bindtap="goToAddressHandle">
+        <view class="one" wx:for="{{dizhi}}" wx:key="moren">
+            <view>{{item.moren}}</view>
+            <view>{{item.sanji}}</view>
+        </view>
+        <view class="two" wx:for="{{dizhi}}" wx:key="moren">
+            <view>{{item.juti}}</view>
+            <viem wx:for="{{kouhao}}">
+                <image src="{{tiem.url}}" style="height: 25rpx;width: 30rpx;padding-left: 460rpx;"></image> 
+            </viem>
+        </view>
+        <view class="three"  wx:for="{{dizhi}}" wx:key="moren">
+            <view>{{item.name}}</view>
+            <view>{{item.phone}}</view>
+        </view>
+    </view>
+    <!-- ---支付方式--- -->
+    <view class="zhifu" wx:for="{{fukuan}}" wx:key="*this">
+        <view>{{item.zhifu}}</view>
+        <view class="two" wx:for="{{fukuan}}">{{item.fanghshi}}</view>
+    </view>
+    <!-- ---货物详情--- -->
+    <view class="huowuxiangqing" row-view>
+        <view class="one" wx:for="{{huowuxiangqing}}" wx:key="name">
+            <view>{{item.name}}</view>
+        </view>
+        <view class="tow" wx:for="{{huowuxiangqing}}" wx:key="name">
+            <view  class="huo" wx:for="{{huowu}}" wx:key="*this">
+                <image src="{{item.url}}" style="height: 160rpx;width: 160rpx;padding-right: 30rpx;"></image>
+                <image src="{{item.url}}" style="height: 160rpx;width: 160rpx;padding-right: 30rpx;"></image>
+            </view>
+            <view class="shu" wx:for="{{huowuxiangqing}}" wx:key="name">
+                <view >{{item.shuliang}}</view>
+            </view>
+        </view>
+        <view class="four" wx:for="{{huowuxiangqing}}" wx:key="name">{{item.beizhu}}</view>
+        <view class="five" wx:for="{{huowuxiangqing}}" wx:key="name">
+            <view>{{item.kuaidigongsi}}</view>
+            <view>{{item.wuliu}}</view>
+        </view>
+        <view class="six" wx:for="{{huowuxiangqing}}" wx:key="name">
+            <view>{{item.day}}</view>
+        </view>   
+    </view>
+
+</scroll-view>
+
+<!-- ---提交详情--- -->
+
+<view class="tijiao clomun-view" style="padding-bottom: {{safeHeight}}rpx">
+    <view class="row-view tijiao-jiage" wx:for="{{tijiao}}" wx:key="spjiage">
+        <view class="one">{{item.spjiage}}</view>
+        <view class="two" wx:for="{{tijiao}}" wx:key="spjiage"><text style="font-size: 16rpx;">￥</text>{{item.spjiagenum}}</view>
+    </view>
+    <view class="row-view tijiao-yunfei" wx:for="{{tijiao}}" wx:key="spjiage">
+        <view class="one">{{item.yunfei}}</view>
+        <view class="jia">+</view> 
+        <view class="two"><text style="font-size: 16rpx;">￥</text>{{item.yunfeinum}}</view>
+    </view>
+    <view class="row-view tijiao-heji" wx:for="{{tijiao}}" wx:key="spjiage">
+        <view class="one"><text style="font-size: 24rpx">￥</text>{{item.zong}}</view>
+        <view class="two">{{item.tj}}</view>
+    </view>
+</view>

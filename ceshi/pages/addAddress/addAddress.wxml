@@ -1,0 +1,87 @@
+<scroll-view scroll-y class="scroller" style="height:{{pageHeight}}rpx;">
+    <view class="normal-cloumn bgc" style="height:114rpx; padding:36rpx 46rpx 38rpx 30rpx;margin-bottom: 2rpx;">
+        <view class="normal-row">
+            <view class="h1">收货人</view>
+            <view class="h2" style="margin-right:225rpx">
+            <input 
+                data-filed="name" 
+                bindinput="inputTextHandle" 
+                type="text" 
+                value="{{address.name}}" placeholder="请填写收货人姓名"
+            ></input>
+            </view>
+            <view wx:for="{{addfriends}}" wx:key="id">
+                <image src="{{item.url}}" style="height: 40rpx; width: 40rpx;"></image>
+            </view>
+        </view>
+    </view>
+    <view class="normal-cloumn bgc" style="height:114rpx; padding:36rpx 46rpx 38rpx 30rpx;margin-bottom: 2rpx;">
+        <view class="normal-row">
+            <view class="h1">手机号码</view>
+            <view class="h2" style="margin-right:225rpx">
+                <input type="number" 
+                    data-filed="phone"
+                    value="{{ address.phone }}" 
+                    bindinput="inputTextHandle"
+                    placeholder="请填写收货人手机号"
+                ></input>
+            </view>
+        </view>
+    </view>
+    <view class="normal-cloumn bgc" style="height:114rpx; padding:36rpx 46rpx 38rpx 30rpx;margin-bottom: 2rpx;">
+        <view class="normal-row">
+            <view class="h1" style="margin-right: 46rpx;">所在地区</view>
+            <view class="select" >
+                <picker range="{{province}}" range-key="name"
+                bindchange="inputTextHandle"
+                sheng_id="{{address.sheng_id}}"
+                data-filed="sheng_name"
+                data-shengid="sheng_id"
+                data-format="formatPickerValue_sheng"
+                class="picker">{{sheng_name_tempIndexValue >= 0 ? province[sheng_name_tempIndexValue].name : '当前省'}} 
+                </picker>
+                <picker range="{{city}}" range-key="name"
+                shi_id="{{address.shi_id}}"
+                bindchange="inputTextHandle"
+                data-filed="shi_name"
+                data-format="formatPickerValue_shi"
+                class="picker">{{shi_name_tempIndexValue >= 0 ? city[shi_name_tempIndexValue].name :'当前市'}}</picker>
+                <picker class="picker"
+                range="{{qu}}" range-key="name"
+                bindchange="inputTextHandle"
+                data-filed="qu_name"
+                data-format="formatPickerValue_qu"
+                >{{qu_name_tempIndexValue >= 0 ? qu[qu_name_tempIndexValue].name :'当前区'}}</picker>
+            </view>
+        </view>
+    </view>
+    <view class="bgc" style="height:202rpx; padding:36rpx 46rpx 38rpx 30rpx;margin-bottom: 2rpx;">
+        <view class="normal-row">
+            <view class="h1" style="margin-right: 46rpx;">详细地址</view>
+            <view class="h2" style="margin-right:252rpx">
+                <input 
+                    type="text" 
+                    bindinput="inputTextHandle" data-filed="address"
+                    value="{{address.address}}"
+                    placeholder="请填写收货人详细的收货地址"
+                ></input>
+            </view>
+        </view>
+    </view>
+    
+    <view class="normal-cloumn bgc" style="height: 156rpx; padding:0 38rpx 0 34rpx;margin-bottom: 2rpx;">
+        <view class="normal-row" >
+            <view class="normal-cloumn" style="padding-right: 125rpx;">
+                <view>设置默认地址</view>
+                <view class="h2">提醒：每次下单会默认推荐该地址</view>
+            </view>
+            <switch 
+                data-filed="is_moren"
+                checked="{{address.is_moren}}" bindchange="inputTextHandle"
+            ></switch>
+        </view>
+    </view>
+</scroll-view>
+<view class="bgc" style="height: 176rpx; padding-bottom: {{safeHeight}}rpx;">
+        <view class="bottom-button h3" style="height: 80rpx; width: 698rpx;" bindtap="addAddress">保存</view>
+</view>

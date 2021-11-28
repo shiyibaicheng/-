@@ -1,0 +1,126 @@
+<view style="height: {{navigationHeight}};"></view>
+<scroll-view style="height: {{pageHeight}}rpx" class="scroll-page" scroll-y>
+
+    <view class="title-number-cart">全部（4）</view>
+        <view  class="shop-goods">
+        <view class="shop-goods-title row-view">
+            <checkbox></checkbox>
+            <view style="margin-left: 20rpx;">柳宗理设计工作室</view>
+        </view>
+        <view class="row-view shop-goods-content">
+            <checkbox></checkbox>
+            <view wx:for= "{{canpin}}" wx:key="id">
+                <view wx:if="{{item.id === 1}}"><image src="{{item.url}}"></image></view>
+                <!-- <image src="{{item.url}}"></image> -->
+            </view>
+            <view wx:for= "{{canpin}}" wx:key="id">
+                <view class="shop-goods-content-right clomun-view" wx:if="{{item.id === 1}}">
+                    <view class="title" >{{item.name}}</view>
+                    <view class="row-view" style="justify-content: space-between; width: 100%">
+                        <view class="price" style="color: red;"><text style="font-size: 16rpx;;">￥</text>{{item.jiage}}</view>
+                        <view class="number row-view">
+                            <view>-</view>
+                            <view>1</view>
+                            <view>+</view>
+                        </view>
+                    </view>
+            </view>    
+            </view>
+        </view>
+        </view>
+
+        <view class="teshuhang row-view">
+            <view class="manjian">满减</view>
+            <view>满199立减100</view>
+            <view>去拼单-></view>
+        </view>
+
+        <view class="row-view shop-goods-content" style="background-color: white; padding: 50rpx 30rpx;">
+            <checkbox></checkbox>
+            <view wx:for= "{{canpin}}" wx:key="id">
+                <view wx:if="{{item.id === 2}}"><image src="{{item.url}}"></image></view>
+                <!-- <image src="{{item.url}}"></image> -->
+           </view>
+           <view wx:for= "{{canpin}}" wx:key="id">
+            <view class="shop-goods-content-right clomun-view" wx:if="{{item.id === 2}}">
+                <view class="title">{{item.name}}</view>
+                <view class="row-view" style="justify-content: space-between; width: 100%">
+                    <view class="price" style="color: red;"><text style="font-size: 16rpx;;">￥</text>{{item.jiage}}</view>
+                    <view class="number row-view">
+                        <view>-</view>
+                        <view>1</view>
+                        <view>+</view>
+                    </view>
+                </view>
+            </view>
+            </view>
+        </view>
+<!-- -------------- -->
+
+        <view  class="shop-goods">
+        <view class="shop-goods-title row-view">
+            <checkbox></checkbox>
+            <view style="margin-left: 20rpx;">柳宗理设计工作室</view>
+        </view>
+        <view class="row-view shop-goods-content">
+            <checkbox></checkbox>
+            <view wx:for= "{{canpin}}" wx:key="id">
+                <view wx:if="{{item.id === 1}}"><image src="{{item.url}}"></image></view>
+                <!-- <image src="{{item.url}}"></image> -->
+            </view>
+            <view wx:for= "{{canpin}}" wx:key="id">
+                <view class="shop-goods-content-right clomun-view" wx:if="{{item.id === 1}}">
+                    <view class="title" >{{item.name}}</view>
+                    <view class="row-view" style="justify-content: space-between; width: 100%">
+                        <view class="price" style="color: red;"><text style="font-size: 16rpx;;">￥</text>{{item.jiage}}</view>
+                        <view class="number row-view">
+                            <view>-</view>
+                            <view>1</view>
+                            <view>+</view>
+                        </view>
+                    </view>
+            </view>    
+            </view>
+        </view>
+        </view>
+
+        <view class="teshuhang row-view">
+            <view class="manjian">满减</view>
+            <view>满199立减100</view>
+            <view>去拼单-></view>
+        </view>
+
+        <view class="row-view shop-goods-content" style="background-color: white; padding: 50rpx 30rpx;">
+            <checkbox></checkbox>
+            <view wx:for= "{{canpin}}" wx:key="id">
+                <view wx:if="{{item.id === 2}}"><image src="{{item.url}}"></image></view>
+                <!-- <image src="{{item.url}}"></image> -->
+           </view>
+           <view wx:for= "{{canpin}}" wx:key="id">
+            <view class="shop-goods-content-right clomun-view" wx:if="{{item.id === 2}}">
+                <view class="title">{{item.name}}</view>
+                <view class="row-view" style="justify-content: space-between; width: 100%">
+                    <view class="price" style="color: red;"><text style="font-size: 16rpx;;">￥</text>{{item.jiage}}</view>
+                    <view class="number row-view">
+                        <view>-</view>
+                        <view>1</view>
+                        <view>+</view>
+                    </view>
+                </view>
+            </view>
+            </view>
+        </view>
+ <!-- -------------- --> 
+
+</scroll-view>
+
+
+<view class="bottom-btn-view row-view" style="padding-bottom: {{safeHeight}}rpx">
+    <view class="row-view">
+        <checkbox></checkbox>
+        <view class="quanxuan">全选</view>
+    </view>
+    <view class="price"> 合计：<text style="font-size: 16rpx">￥</text>1290.00</view>
+    <view class="jiesuan" bindtap="gotoaddAddress">结算（0）</view>
+</view>
+

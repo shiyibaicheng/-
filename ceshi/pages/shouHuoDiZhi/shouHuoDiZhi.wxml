@@ -1,0 +1,19 @@
+<scroll-view style="height: {{pageHeight}}rpx" class="scroll-page" scroll-y>
+    <view class="bianjidz  clomun-view" wx:for="{{dizhiArr}}" wx:key="id">
+        <view class="one row-view" bindtap="tapAddAddress" data-addressid="{{item.id}}">
+            <checkbox wx:if="{{item.id === currentAddressId}}" checked="{{true}}"></checkbox>
+            <view class="title">{{item.name}} {{item.phone}}</view>
+            <view class="moren-view" wx:if="{{item.isMoren}}">默认</view>
+            <view class="moren-view" style="background-color: {{tab.backColor}};" wx:for-item="tab" wx:for-index="tabIndex" wx:for="{{item.tabs}}">{{tab.name}}</view>
+        </view>
+        <view class="two">
+            {{item.dizhi}}
+            <image src="/pages/images/pen.png"></image>
+        </view>
+    </view>
+</scroll-view>
+<view class="xinzeng row-view"  style="padding-bottom: {{safeHeight}}rpx" >
+    <view class="xz"  bindtap="gotoaddAddress">
+        <view>新增收货地址</view>
+    </view>
+</view>
